@@ -19,7 +19,7 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 
-  preloadImages: false,
+  preloadImages: true,
   lazy: {
     loadPrevNext: true,
     loadOnTransitionStart: true

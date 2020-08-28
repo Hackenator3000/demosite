@@ -7,6 +7,7 @@
 ul[class],
 ol[class] {
   padding: 0;
+  font-family: Plumb;
 }
 
 body,
@@ -24,6 +25,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-family: Plumb;
 }
 
 body {
@@ -32,11 +34,13 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   box-sizing: border-box;
+  font-family: Plumb;
 }
 
 ul[class],
 ol[class] {
   list-style: none;
+  font-family: Plumb;
 }
 
 a:not([class]) {
@@ -57,6 +61,7 @@ button,
 textarea,
 select {
   font: inherit;
+  
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -66,6 +71,12 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+@font-face {
+  font-family: Plumb;
+  src: url(/assets/fonts/Plumb.ttf);
+  font-weight: 400;
 }
 
 section {
@@ -110,6 +121,9 @@ section {
   justify-content: space-between;
 }
 
+[class]a [class] {
+  font-family: Plumb;
+}
 a[class]:hover{
 color: #4caa49;
 }
@@ -143,10 +157,9 @@ color: #4caa49;
   font-size: 22px;
   color: white;
   background: #4caa49;
+  border: 3px solid #4caa49;
   border-radius: 90px/60px;
   text-align: center;
-  margin: 0 auto;
-  float: right;
 }
 
 .callback-button h2 {
