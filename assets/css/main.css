@@ -74,9 +74,43 @@ select {
 }
 
 @font-face {
-  font-family: Plumb;
-  src: url(/assets/fonts/Plumb.ttf);
-  font-weight: 400;
+  font-family: 'Plumb';
+  src: url('../fonts/Plumb-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plumb';
+  src: url('../fonts/Plumb-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plumb';
+  src: url('../fonts/Plumb-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plumb';
+  src: url('../fonts/Plumb-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plumb';
+  src: url('../fonts/Plumb-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 section {
@@ -121,9 +155,6 @@ section {
   justify-content: space-between;
 }
 
-[class]a [class] {
-  font-family: Plumb;
-}
 a[class]:hover{
 color: #4caa49;
 }
@@ -182,7 +213,7 @@ color: #4caa49;
 }
 
 .swiper-wrapper {
-  display: flexbox;
+  display: flex;
   position: relative;
   justify-content: center;
   margin: 0;
@@ -198,9 +229,8 @@ color: #4caa49;
 .slide-1-text h2 {
 text-shadow: 3px 4px 6px rgba(239, 174, 146, 0.75);
 color: #ffffff;
-font-family: "Plumb - Black";
+font-weight: 900;
 font-size: 56px;
-font-weight: 400;
 line-height: 84.19px;
 text-transform: uppercase;
 
@@ -210,9 +240,7 @@ text-transform: uppercase;
 width: 541px;
 height: 21px;
 color: #592332;
-font-family: Plumb;
 font-size: 22px;
-font-weight: 400;
 line-height: 30px;
 }
 
@@ -244,19 +272,17 @@ padding: 8px;
 
 .welcome h3 {
 color: #4caa49;
-font-family: "Plumb - Black";
+font-weight: 900;
 font-size: 24px;
-font-weight: 400;
 text-transform: uppercase;
 }
 
 .welcome h2 {
   color: #5c2735;
-    font-family: "Plumb - Black";
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 84.19px;
-    text-transform: uppercase;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 84.19px;
+  text-transform: uppercase;
 }
 
 .map-container {
@@ -270,27 +296,23 @@ text-transform: uppercase;
  }
 
 .loyalty-head {
-   display: flexbox;
+   display: flex;
+   flex-flow: column;
    text-align: center;
  }
 
 .loyalty-head h2 {
     color: #5c2735;
-    font-family: "Plumb - Black";
+    font-weight: 900;
     font-size: 60px;
-    font-weight: 400;
     line-height: 84.18px;
     text-transform: uppercase;
 }
 
 .loyalty-head h3 {
   color: #5c2735;
-  font-family: Plumb;
   font-size: 22px;
-  font-weight: 400;
   line-height: 30px;
-  font-family: "Plumb - Regular";
-  font-weight: 400;
 }
 
 .loyalty-rank {
@@ -301,16 +323,12 @@ text-transform: uppercase;
 
 .loyalty-rank [class] h2 {
   color: #5c2735;
-  font-family: Plumb;
   font-size: 80px;
-  font-weight: 400;
 }
 
 .loyalty-rank [class] h3 {
   color: #5c2735;
-  font-family: Plumb;
   font-size: 22px;
-  font-weight: 400;
   line-height: 30px;
 }
 
