@@ -33,6 +33,8 @@ body {
   line-height: 1.5;
   box-sizing: border-box;
   font-family: Plumb;
+  font-weight: 400;
+  color: #5c2735;
 }
 
 ul[class],
@@ -71,9 +73,43 @@ select {
 }
 
 @font-face {
-  font-family: Plumb;
-  src: url(/assets/fonts/Plumb-black.ttf);
-  font-weight: 400;
+  font-family: 'Plumb';
+  src: url('../fonts/Plumb-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plumb';
+  src: url('../fonts/Plumb-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plumb';
+  src: url('../fonts/Plumb-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plumb';
+  src: url('../fonts/Plumb-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plumb';
+  src: url('../fonts/Plumb-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* section {
@@ -112,7 +148,7 @@ flex-flow: column;
 }
 
 .main-logo {
-  max-width: 230px;
+  width: 230px;
   margin-right: 26px;
 }
 
@@ -147,6 +183,7 @@ color: #4caa49;
   display: flex;
   flex-direction: column;
   margin-right: 26px;
+  color: #6e2707;
 }
 
 .callback {
@@ -192,29 +229,27 @@ color: #4caa49;
 }
 
 .swiper-slide {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-image: url("/assets/img/slider-bg.png");
 }
 
 .slide-1-text h2 {
-  text-shadow: 3px 4px 6px rgba(239, 174, 146, 0.75);
-  color: #ffffff;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 84.19px;
-  text-transform: uppercase;
+text-shadow: 3px 4px 6px rgba(239, 174, 146, 0.75);
+color: #ffffff;
+font-weight: 900;
+font-size: 56px;
+line-height: 84.19px;
+text-transform: uppercase;
 
 }
 
 .swiper-slide h3 {
-  width: 541px;
-  height: 21px;
-  color: #592332;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 30px;
+width: 541px;
+height: 21px;
+font-size: 22px;
+line-height: 30px;
 }
 
 .price-button {
@@ -241,19 +276,20 @@ padding: 8px;
 .welcome {
   display: block;
   text-align: center;
+  margin-top: 100px;
+  padding-bottom: 100px;
 }
 
 .welcome h3 {
 color: #4caa49;
+font-weight: bold;
 font-size: 24px;
-font-weight: 400;
 text-transform: uppercase;
 }
 
 .welcome h2 {
-  color: #5c2735;
+  font-weight: 900;
   font-size: 60px;
-  font-weight: 400;
   line-height: 84.19px;
   text-transform: uppercase;
 }
@@ -266,45 +302,45 @@ text-transform: uppercase;
 .map-block {
    display: flex;
    margin: 0 100px;
+   padding-bottom: 400px;
+ }
+
+ .loyalty-sect {
+   padding-bottom: 120px;
+   margin-top: -200px;
  }
 
 .loyalty-head {
-   display: block;
+   display: flex;
+   flex-flow: column;
    text-align: center;
  }
 
 .loyalty-head h2 {
-    color: #5c2735;
+    font-weight: bold;
     font-size: 60px;
-    font-weight: 400;
     line-height: 84.18px;
     text-transform: uppercase;
 }
 
 .loyalty-head h3 {
-  color: #5c2735;
   font-size: 22px;
-  font-weight: 400;
   line-height: 30px;
-  font-weight: 400;
 }
 
 .loyalty-rank {
   display: inline-flex;
   margin: 0 77px;
+  margin-top: 50px;
 
 }
 
 .loyalty-rank [class] h2 {
-  color: #5c2735;
   font-size: 80px;
-  font-weight: 400;
 }
 
 .loyalty-rank [class] h3 {
-  color: #5c2735;
   font-size: 22px;
-  font-weight: 400;
   line-height: 30px;
 }
 
@@ -342,6 +378,10 @@ text-transform: uppercase;
   font-size: 22px;
 }
 
+.loyalty-info {
+  text-align:center;
+}
+
 .banner-sect {
   display:block;
   position: relative;
@@ -373,21 +413,25 @@ text-transform: uppercase;
 .phone-head {
   display: flex;
   text-align: center;
-  font-size: 47px;
+  font-size: 33px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   line-height: 55px;
 }
 
-.phone-body h3 {
+.phone-body {
   color: #fbf5b2;
   font-size: 24px;
   font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .contacts-logo {
-box-sizing: border-box;
+  position: absolute;
+  top: -550px;
+  right: -850px;
 
 }
 
@@ -398,6 +442,7 @@ box-sizing: border-box;
   background: none;
   color:white;
   padding-left: 15px;
+  margin-top: 40px;
 }
 
 .phone-button {
@@ -409,4 +454,78 @@ box-sizing: border-box;
   border: 3px solid #4caa49;
   border-radius: 90px/60px;
   text-align: center;
+}
+
+.phone-info {
+  margin-top: 30px;
+  color: #f8e1a3;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.phone-info a {
+  color: #f8e1a3;
+}
+
+.contacts {
+ margin-bottom: 100px;
+}
+
+.contacts-title {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 75px;
+  font-family: "Plumb";
+  font-weight: bold;
+  font-size:60px;
+  text-transform: uppercase;
+}
+
+.contacts-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-element {
+  text-align: center;
+  max-width: 420px;
+}
+
+.icon-phone {
+  background-image: url(/assets/img/icon_phone.png);
+  background-repeat: no-repeat;
+  width: 66px;
+  height: 66px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.icon-p-text a{
+  color: #4caa49;
+}
+
+.icon-email {
+  background-image: url(/assets/img/icon_email.png);
+  background-repeat: no-repeat;
+  width: 66px;
+  height: 66px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.icon-em-text a{
+  color: #4caa49;
+}
+.icon-map {
+  background-image: url(/assets/img/icon_map.png);
+  background-repeat: no-repeat;
+  width: 66px;
+  height: 66px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.footer-3g {
+  text-align: center;
+  background-color: #dff3e5;
 }
