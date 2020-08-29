@@ -7,7 +7,6 @@
 ul[class],
 ol[class] {
   padding: 0;
-  font-family: Plumb;
 }
 
 body,
@@ -25,7 +24,6 @@ blockquote,
 dl,
 dd {
   margin: 0;
-  font-family: Plumb;
 }
 
 body {
@@ -40,7 +38,6 @@ body {
 ul[class],
 ol[class] {
   list-style: none;
-  font-family: Plumb;
 }
 
 a:not([class]) {
@@ -75,13 +72,17 @@ select {
 
 @font-face {
   font-family: Plumb;
-  src: url(/assets/fonts/Plumb.ttf);
+  src: url(/assets/fonts/Plumb-black.ttf);
   font-weight: 400;
 }
 
-section {
+/* section {
     height: 1000px;
     padding: 0 calc(50%-590px);
+} */
+
+section .container {
+flex-flow: column;
 }
 
 .header-block {
@@ -92,11 +93,16 @@ section {
   align-items: center;
 }
 
-.header-main {
+.container {
   display: flex;
-  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  max-width: 1596px;
+}
+
+.header-block .container {
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -105,7 +111,7 @@ section {
   align-items: center;
 }
 
-.image {
+.main-logo {
   max-width: 230px;
   margin-right: 26px;
 }
@@ -121,10 +127,7 @@ section {
   justify-content: space-between;
 }
 
-[class]a [class] {
-  font-family: Plumb;
-}
-a[class]:hover{
+.navig-item a:hover{
 color: #4caa49;
 }
 
@@ -182,7 +185,7 @@ color: #4caa49;
 }
 
 .swiper-wrapper {
-  display: flexbox;
+  display: flex;
   position: relative;
   justify-content: center;
   margin: 0;
@@ -196,24 +199,22 @@ color: #4caa49;
 }
 
 .slide-1-text h2 {
-text-shadow: 3px 4px 6px rgba(239, 174, 146, 0.75);
-color: #ffffff;
-font-family: "Plumb - Black";
-font-size: 56px;
-font-weight: 400;
-line-height: 84.19px;
-text-transform: uppercase;
+  text-shadow: 3px 4px 6px rgba(239, 174, 146, 0.75);
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 84.19px;
+  text-transform: uppercase;
 
 }
 
 .swiper-slide h3 {
-width: 541px;
-height: 21px;
-color: #592332;
-font-family: Plumb;
-font-size: 22px;
-font-weight: 400;
-line-height: 30px;
+  width: 541px;
+  height: 21px;
+  color: #592332;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .price-button {
@@ -244,7 +245,6 @@ padding: 8px;
 
 .welcome h3 {
 color: #4caa49;
-font-family: "Plumb - Black";
 font-size: 24px;
 font-weight: 400;
 text-transform: uppercase;
@@ -252,11 +252,10 @@ text-transform: uppercase;
 
 .welcome h2 {
   color: #5c2735;
-    font-family: "Plumb - Black";
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 84.19px;
-    text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 84.19px;
+  text-transform: uppercase;
 }
 
 .map-container {
@@ -270,13 +269,12 @@ text-transform: uppercase;
  }
 
 .loyalty-head {
-   display: flexbox;
+   display: block;
    text-align: center;
  }
 
 .loyalty-head h2 {
     color: #5c2735;
-    font-family: "Plumb - Black";
     font-size: 60px;
     font-weight: 400;
     line-height: 84.18px;
@@ -285,11 +283,9 @@ text-transform: uppercase;
 
 .loyalty-head h3 {
   color: #5c2735;
-  font-family: Plumb;
   font-size: 22px;
   font-weight: 400;
   line-height: 30px;
-  font-family: "Plumb - Regular";
   font-weight: 400;
 }
 
@@ -301,14 +297,12 @@ text-transform: uppercase;
 
 .loyalty-rank [class] h2 {
   color: #5c2735;
-  font-family: Plumb;
   font-size: 80px;
   font-weight: 400;
 }
 
 .loyalty-rank [class] h3 {
   color: #5c2735;
-  font-family: Plumb;
   font-size: 22px;
   font-weight: 400;
   line-height: 30px;
@@ -346,4 +340,73 @@ text-transform: uppercase;
   background-color: #e3000f;
   border-radius: 90px/60px;
   font-size: 22px;
+}
+
+.banner-sect {
+  display:block;
+  position: relative;
+  background-color: white;
+  
+}
+
+.banner-wp { 
+  background-image: url(/assets/img/banner-bg.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: -177px -276px;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 75% 35%;
+  border-bottom-right-radius: 75% 35%;
+  padding-top: 187px;
+  padding-bottom: 200px;
+}
+
+.phone-block {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  max-width: 720px;
+}
+
+.phone-head {
+  display: flex;
+  text-align: center;
+  font-size: 47px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 55px;
+}
+
+.phone-body h3 {
+  color: #fbf5b2;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.contacts-logo {
+box-sizing: border-box;
+
+}
+
+.your-phone {
+  border: none;
+  border-bottom: 3px solid;
+  border-bottom-color: white;
+  background: none;
+  color:white;
+  padding-left: 15px;
+}
+
+.phone-button {
+  width: 282px;
+  height: 57px;
+  font-size: 20px;
+  color: white;
+  background: #4caa49;
+  border: 3px solid #4caa49;
+  border-radius: 90px/60px;
+  text-align: center;
 }
