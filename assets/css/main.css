@@ -72,6 +72,135 @@ select {
   }
 }
 
+/* @media screen and (max-width: 1400px) {
+  .contacts-logo {
+    top:-1px;
+    right: -1px;
+  }
+  .contacts-logo img {
+  width: 600px;
+  }
+} */
+
+@media screen and (max-width: 1420px) {
+  .banner-wp .contacts-logo {
+    width: 1000px;
+    top:-100px;
+    right: -550px;
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .header-block .container {
+    display: grid;
+    grid-template-areas: 
+    "logo call"
+    "navig navig";
+  }
+  .image-block {
+    grid-area: logo;
+  }
+  .call {
+    grid-area: call;
+  }
+  .navigator {
+    grid-area: navig;
+    padding: 30px;
+  }
+  .navigator .navig-box {
+    justify-content: center;
+  }
+  .navigator .navig-box .navig-item {
+    padding: 0 30px;
+  }
+   .banner-wp .contacts-logo {
+    top:-100px;
+    right: -500px;
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .banner-wp .contacts-logo {
+    width: 850px;
+    top:-50px;
+    right: -550px;
+  }
+  
+}
+
+@media screen and (max-width:1050px) {
+  .banner-wp .contacts-logo {
+    width: 850px;
+    top:-50px;
+    right: -550px;
+  }
+  .swiper-slide {
+    flex-flow: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .banner-wp .contacts-logo {
+    display:none;
+  }
+  .banner-sect .phone-block {
+    max-width: none;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .header-block .container {
+    display: grid;
+    grid-template-areas: 
+    "logo"
+    "navig"
+    "call";
+  }
+  .image-block {
+    grid-area: logo;
+    justify-content: center;
+  }
+  .call {
+    grid-area: call;
+    justify-content: center;
+    flex-flow: column;
+  }
+  .call-box .call-item{
+    display:inline;
+    padding: 0 30px;
+  }
+  .callback {
+    margin-top: 30px;
+  }
+  .navigator {
+    grid-area: navig;
+    padding: 30px;
+  }
+  .navigator .navig-box {
+    justify-content: center;
+  }
+  .navigator .navig-box .navig-item {
+    padding: 0 30px;
+  }
+  .contacts-body {
+    flex-flow: column;
+    align-items: center;
+
+  }
+  .loyalty-rank {
+    flex-flow: column;
+    text-align: center;
+  }
+  .loyalty-rank .rank-item {
+    border-right: none;
+  }
+}
+
 @font-face {
   font-family: 'Plumb';
   src: url('../fonts/Plumb-Black.woff2') format('woff2');
@@ -112,11 +241,6 @@ select {
   font-display: swap;
 }
 
-/* section {
-    height: 1000px;
-    padding: 0 calc(50%-590px);
-} */
-
 section .container {
 flex-flow: column;
 }
@@ -154,7 +278,6 @@ flex-flow: column;
 
 .navigator {
     display: block;
-    margin-right: 26px;
 }
 
 .navig-box {
@@ -180,7 +303,6 @@ color: #4caa49;
 }
 
 .call-box {
-  display: flex;
   flex-direction: column;
   margin-right: 26px;
   color: #6e2707;
@@ -233,6 +355,7 @@ color: #4caa49;
   align-items: center;
   justify-content: center;
   background-image: url("/assets/img/slider-bg.png");
+  padding: 30px 0;
 }
 
 .slide-1-text h2 {
@@ -249,10 +372,14 @@ text-transform: uppercase;
 width: 541px;
 height: 21px;
 font-size: 22px;
-line-height: 30px;
+line-height: 20px;
 }
 
 .price-button {
+padding: 10px 0;
+}
+
+.price-button button{
 width: 195px;
 height: 56px;
 border: 3px solid #f00011;
@@ -265,8 +392,7 @@ padding: 8px;
 
 .img-slide-1 {
   display: flex;
-  width: auto;
-  height: 473px;
+  min-width: 300px;
 }
 
 .main-pg {
@@ -344,28 +470,20 @@ text-transform: uppercase;
   line-height: 30px;
 }
 
-.first {
+.rank-item {
   border-right: 1px solid;
   border-right-color: #4caa49;
   padding: 20px;
   margin: 15px;
 }
 
-
-.second {
-  border-right: 1px solid;
-  border-right-color: #4caa49;
-  padding: 20px;
-  margin: 15px;
-}
-
-.third {
-  padding: 20px;
-  margin: 15px;
+.loyalty-rank :last-child {
+  border-right: none;
 }
 
 .joinus {
   text-align: center;
+  padding: 30px 0;
 }
 
 .joinus-bt {
@@ -431,7 +549,7 @@ text-transform: uppercase;
 .contacts-logo {
   position: absolute;
   top: -550px;
-  right: -850px;
+  right: -950px;
 
 }
 
@@ -528,4 +646,5 @@ text-transform: uppercase;
 .footer-3g {
   text-align: center;
   background-color: #dff3e5;
+  margin: 0 100px;
 }
