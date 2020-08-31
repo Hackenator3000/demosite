@@ -72,16 +72,6 @@ select {
   }
 }
 
-/* @media screen and (max-width: 1400px) {
-  .contacts-logo {
-    top:-1px;
-    right: -1px;
-  }
-  .contacts-logo img {
-  width: 600px;
-  }
-} */
-
 @media screen and (max-width: 1420px) {
   .banner-wp .contacts-logo {
     width: 1000px;
@@ -199,6 +189,29 @@ select {
   .loyalty-rank .rank-item {
     border-right: none;
   }
+}
+
+@media screen and (max-width: 600px) {
+.call-box .call-item  {
+  display:flex;
+  }
+  .navigator .navig-box {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+  }
+.container  .phone-button {
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+.phone-call {
+  display:flex;
+  flex-flow: column;
+}
+.map-container .map-block {
+  margin: 0 30px;
+}
 }
 
 @font-face {
@@ -524,7 +537,7 @@ text-transform: uppercase;
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 30px;
+  padding:0 30px;
   max-width: 720px;
 }
 
@@ -558,9 +571,10 @@ text-transform: uppercase;
   border-bottom: 3px solid;
   border-bottom-color: white;
   background: none;
-  color:white;
-  padding-left: 15px;
+  color: white;
   margin-top: 40px;
+  text-align: center;
+  font-weight: 400;
 }
 
 .phone-button {
@@ -572,6 +586,7 @@ text-transform: uppercase;
   border: 3px solid #4caa49;
   border-radius: 90px/60px;
   text-align: center;
+  margin-left: 30px;
 }
 
 .phone-info {
